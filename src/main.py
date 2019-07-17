@@ -43,7 +43,7 @@ if __name__ == '__main__':
     # options['glimpse_clouds'] = True
     # options['pose_predictions'] = True
     options[
-        'root'] = '/Users/fabien/Datasets/NTU-RGB-D' if platform == "darwin" else '/storage/Datasets/NTU-RGB-D-Action-Recognition'
+        'root'] = '/Users/fabien/Datasets/NTU-RGB-D' if platform == "darwin" else '/workspace/NTU_DATA/'
     options['workers'] = 0 if platform == "darwin" else 4
 
     # Infer

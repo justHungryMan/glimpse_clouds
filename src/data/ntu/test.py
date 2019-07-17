@@ -1,15 +1,16 @@
 import argparse
-from data.ntu.dataloader import NTU
+from dataloader import NTU
 import torch
 import ipdb
 import time
 import sys
-from utils.meter import AverageMeter
+sys.path.insert(0, '/workspace/glimpse_clouds/src/utils')
+from meter import AverageMeter
 from PIL import Image
 import matplotlib.patches as patches
 import matplotlib.pyplot as plt
 import numpy as np
-from data.ntu.dataloader import my_collate
+from dataloader import my_collate
 import os
 from matplotlib.patches import Circle
 

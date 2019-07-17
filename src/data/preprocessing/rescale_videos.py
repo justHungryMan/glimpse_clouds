@@ -5,7 +5,8 @@ import time
 import sys
 import ipdb
 import pickle
-from utils.meter import *
+sys.path.insert(0, '/workspace/glimpse_clouds/src/utils')
+from meter import *
 
 
 def main(args):

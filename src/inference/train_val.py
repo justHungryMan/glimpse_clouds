@@ -60,7 +60,7 @@ def update_metric_loss(input, output, metric, loss, losses):
     list_idx_correct_preds = metric.add(preds, target)
 
     metric_val, metric_avg, _ = metric.value()
-
+    
     return metric_val, metric_avg, list_idx_correct_preds
 
 
@@ -75,6 +75,8 @@ def train(train_loader, model, criterion, optimizer, metric, epoch, options, cud
 
     end = time.time()
     print("")
+    print(train_loader)
+    print("trainLoader")
     for i, input in enumerate(train_loader):
         # measure data loading time
         data_time.update(time.time() - end)

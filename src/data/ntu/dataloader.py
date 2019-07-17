@@ -72,7 +72,7 @@ class NTU(data.Dataset):
 
     @staticmethod
     def load_pickle(file):
-        # file = '/Users/fabien/Datasets/EPIC_KITCHENS_2018/annotations/EPIC_train_action_labels.pkl'
+         #file = '/workSpace/NTU_files/NTU_RGBD/rgb_avi/_256x256_30/dict_id_length.pickle'
 
         with open(file, mode='rb') as f:
             df = pickle.load(f, encoding='latin1')
